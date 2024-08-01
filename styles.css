@@ -5,7 +5,7 @@ body {
 	align-items: center;
 	height: 100vh;
 	margin: 0;
-	background: linear-gradient(to bottom right, #4e007f, #1a1a1d);
+	background: linear-gradient(135deg, #ffafbd, #ffc3a0);
 	color: white;
   }
   
@@ -63,7 +63,7 @@ body {
 	font-size: 1.2rem;
 	padding: 14px 28px;
 	margin: 0 15px;
-	background-color: #6a1b9a;
+	background-color: #ffafbd;
 	color: white;
 	border: none;
 	border-radius: 8px;
@@ -72,6 +72,6 @@ body {
   }
   
   .button-container button:hover {
-	background-color: #4a148c;
+	background-color: #ffc3a0;
   }
   
