@@ -15,11 +15,17 @@ startBtn.addEventListener("click", function() {
   // Clear any existing countdown interval
   clearInterval(countdownInterval);
 
+  // Get values from input fields, default to 0 if empty
+  const days = parseInt(daysInput.value) || 0;
+  const hours = parseInt(hoursInput.value) || 0;
+  const minutes = parseInt(minutesInput.value) || 0;
+  const seconds = parseInt(secondsInput.value) || 0;
+
   // Calculate total milliseconds for the countdown
-  countdownTime = (parseInt(daysInput.value) * 24 * 60 * 60 * 1000) +
-                  (parseInt(hoursInput.value) * 60 * 60 * 1000) +
-                  (parseInt(minutesInput.value) * 60 * 1000) +
-                  (parseInt(secondsInput.value) * 1000);
+  countdownTime = (days * 24 * 60 * 60 * 1000) +
+                  (hours * 60 * 60 * 1000) +
+                  (minutes * 60 * 1000) +
+                  (seconds * 1000);
 
   if (countdownTime <= 0) {
     alert("Please enter a valid countdown time.");
